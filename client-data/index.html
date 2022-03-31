@@ -1,43 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+
 <head>
-	<meta charset="utf-8" />
-	<title>WB — Online collaborative whiteboard</title>
-	<link rel="icon" type="image/png" href="favicon.ico" />
-	<link rel="stylesheet" href="index.css" />
-	<meta name="description" content="A free online whiteboard for realtime collaboration. Draw, write text and sketch new ideas together on whitebophir"/>
-	<meta name="keywords" content="whiteboard,collaborative,online,draw,paint,shared,realtime,wbo,whitebophir"/>
-	<link rel="icon" type="image/x-icon" sizes="16x16 32x32 64x64" href="favicon.ico">
-	<link rel="icon" type="image/svg+xml" sizes="256x256" href="favicon.svg">
-	<link rel="apple-touch-icon" href="favicon.svg">
-	<link rel="mask-icon" href="favicon.svg" color="black">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кузовкин - репетитор по математике!</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        // function getCookie(name) {
+        //     var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        //     return matches ? decodeURIComponent(matches[1]) : undefined;
+        // }
+ 
+
+        // var is_auth = getCookie('is_auth');
+        // if (is_auth == 0) {
+        //     window.location.href = "https://kuzovkin.info/auth/";
+        // }
+    </script>
 </head>
 
 <body>
-
-<header>
-	<h1>WB</h1> - <h2>Welcome</h2>
-</header>
-
-<main>
-<p>Welcome to <b>WB</b>. You can go to <a href="./board.html">the public board</a>
-or create a new one using the form below.
-</p><p>
-To collaborate on a drawing in real time with someone,
-just send them its URL.
-</p>
-
-<form action="./board.html" method="GET">
-	<input type="text" id="board" name="board" placeholder="Name of the board..."/>
-	<input type="submit" value="Go">
-</form>
-</main>
-
-
-<footer>
-	<a href="https://github.com/rdbeach/wb" class="smallink">Source code on github</a>
-</footer>
-	
+    <main class="auth-page main-gradient">
+        <div class="container-fluid">
+            <section class="auth-header col-lg-offset-3 col-lg-6">
+                <h1 class="auth-title">Добро пожаловать<br> в онлайн-доску</h1>
+                <p class="auth-text">Тут какой-то текст с преимуществами даной доски. Сегодня этот текст
+                    используют практически все дизайнеры, набирающие рыбу латиницей.
+                    Абзац считается каноническим во всех справочниках по типографике
+                    и предлагается к использованию в статьях, посвященных изготовлению
+                    макета верстки при отсутствии финальных текстов.</p>
+                <p class="auth-text auth-text__yellow">Для создания новой доски введите название в форму</p>
+            </section>
+            <section class="col-lg-offset-2 col-lg-8">
+                <div class="auth-form auth-form_mini">
+                    <form action="./board.html" method="GET" class="auth-form_form">
+                        <p class="title">Создание доски</p>
+                        <input type="text" id="board" name="board" placeholder="Название*">
+                        <div class="auth-form_container-footer">
+                            <button type="submit" class="main-btn">
+                                <i class="icon-book"></i>&nbsp;Создать
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -8,10 +8,11 @@ lib-cov
 *.out
 *.pid
 *.gz
-
+env/
 pids
 logs
 results
+send_to_board/
 
 npm-debug.log
 

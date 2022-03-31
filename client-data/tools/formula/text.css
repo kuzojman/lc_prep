@@ -1,0 +1,30 @@
+#textToolInput {
+	position:fixed;
+	top:-1000px; /*Hidden*/
+	left:60px;
+	width:250px;
+	background: transparent;
+}
+
+.layer-1 {
+  width: 50%;
+  height: 200px;
+  margin: auto;
+  padding: 5px 10px;
+  
+  line-height: 20px;
+  
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+#textToolInput:focus {
+}
+
+
+#canvas text {
+	font-family:"Arial", "Helvetica", sans-serif;
+	user-select:none;
+	-moz-user-select:none;
+}
+

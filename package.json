@@ -7,16 +7,19 @@
    "license": "AGPL-3.0-or-later",
    "dependencies": {
       "accept-language-parser": "^1.5.0",
+      "glob": "^7.1.6",
       "handlebars": "^4.7.6",
       "polyfill-library": "^3.89.4",
       "serve-static": "^1.14.1",
-      "socket.io": "^2.3.0"
+      "socket.io": "^2.3.0",
+      "websocket": "^1.0.34",
+      "ws": "^8.2.1"
    },
    "scripts": {
       "start": "node ./server/server.js",
       "deploy": "openode deploy"
    },
-   "name": "wb-rdbeach",
+   "name": "wb",
    "description": "Online collaborative whiteboard",
    "main": "./server/server.js",
    "repository": {

@@ -1,0 +1,231 @@
+@font-face {
+	font-family: "GothamProRegular";
+	src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+	src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+		url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProBold";
+	src: url("../fonts/GothamProBold/GothamProBold.eot");
+	src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+		url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "GothamProBlack";
+	src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+	src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+		url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProItalic";
+	src: url("../fonts/GothamProItalic/GothamProItalic.eot");
+	src: url("../fonts/GothamProItalic/GothamProItalic.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/GothamProItalic/GothamProItalic.woff") format("woff"),
+		url("../fonts/GothamProItalic/GothamProItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProMedium";
+	src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+	src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+		url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "GothamProLight";
+	src: url("../fonts/GothamProLight/GothamProLight.eot");
+	src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+		url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "kuzovkin";
+	src: url("../fonts/icon-font/kuzovkin.eot?p2v3jb");
+	src: url("../fonts/icon-font/kuzovkin.eot?p2v3jb#iefix")
+			format("embedded-opentype"),
+		url("../fonts/icon-font//kuzovkin.ttf?p2v3jb") format("truetype"),
+		url("f../fonts/icon-font/kuzovkin.woff?p2v3jb") format("woff"),
+		url("../fonts/icon-font/kuzovkin.svg?p2v3jb#kuzovkin") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "kuzovkin" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-nxt:before {
+	content: "\e900";
+}
+.icon-open-book:before {
+	content: "\e901";
+}
+.icon-phone-call:before {
+	content: "\e902";
+}
+.icon-question:before {
+	content: "\e903";
+}
+.icon-refresh:before {
+	content: "\e904";
+}
+.icon-review:before {
+	content: "\e905";
+}
+.icon-save-file-option:before {
+	content: "\e906";
+}
+.icon-stopwatch:before {
+	content: "\e907";
+}
+.icon-student:before {
+	content: "\e908";
+}
+.icon-view:before {
+	content: "\e909";
+}
+.icon-vk:before {
+	content: "\e90a";
+}
+.icon-warning-sign:before {
+	content: "\e90b";
+}
+.icon-add-plus-button:before {
+	content: "\e90c";
+}
+.icon-at:before {
+	content: "\e90d";
+}
+.icon-avatar:before {
+	content: "\e90e";
+}
+.icon-back:before {
+	content: "\e90f";
+}
+.icon-blogging:before {
+	content: "\e910";
+}
+.icon-book:before {
+	content: "\e911";
+}
+.icon-calendar:before {
+	content: "\e912";
+}
+.icon-cancel:before {
+	content: "\e913";
+}
+.icon-chat-comment-oval-speech-bubble-with-text-lines:before {
+	content: "\e914";
+}
+.icon-checked:before {
+	content: "\e915";
+}
+.icon-clipboard:before {
+	content: "\e916";
+}
+.icon-coordinates:before {
+	content: "\e917";
+}
+.icon-download:before {
+	content: "\e918";
+}
+.icon-edit-1:before {
+	content: "\e919";
+}
+.icon-edit-list:before {
+	content: "\e91a";
+}
+.icon-envelope:before {
+	content: "\e91b";
+}
+.icon-facebook:before {
+	content: "\e91c";
+}
+.icon-floppy-disk:before {
+	content: "\e91d";
+}
+.icon-instagram:before {
+	content: "\e91e";
+}
+.icon-like-fill:before {
+	content: "\e91f";
+}
+.icon-like:before {
+	content: "\e920";
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.eot?n6c10v");
+	src: url("../fonts/icomoon.eot?n6c10v#iefix") format("embedded-opentype"),
+		url("../fonts/icomoon.ttf?n6c10v") format("truetype"),
+		url("../fonts/icomoon.woff?n6c10v") format("woff"),
+		url("../fonts/icomoon.svg?n6c10v#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon2-"],
+[class*=" icon2-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon2-loving-heart:before {
+	content: "\e982";
+}
+.icon2-google:before {
+	content: "\e980";
+}
+.icon2-yandex:before {
+	content: "\e981";
+}

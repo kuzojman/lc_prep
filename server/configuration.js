@@ -15,7 +15,7 @@ module.exports = {
     CA_BUNDLE_PATH: "../../../../ssl/ca_bundle.crt",
 
      /** Save board data */
-     SAVE_BOARDS: process.env['SAVE_BOARDS'] || false,
+     SAVE_BOARDS: process.env['SAVE_BOARDS'] || true,
 
      /** Use a template to validate board data */
      ENFORCE_BOARD_TEMPLATE: process.env['ENFORCE_BOARD_TEMPLATE'] || false,

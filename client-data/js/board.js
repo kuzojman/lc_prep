@@ -767,10 +767,10 @@ function resizeCanvas(m) {
 	var x = m.x | 0, y = m.y | 0
 	var MAX_BOARD_SIZE = 65536; // Maximum value for any x or y on the board
 	if (x > Tools.svg.width.baseVal.value - 2000) {
-		//Tools.svg.width.baseVal.value = Math.min(x + 2000, MAX_BOARD_SIZE);
+		// Tools.svg.width.baseVal.value = Math.min(x + 2000, MAX_BOARD_SIZE);
 	}
 	if (y > Tools.svg.height.baseVal.value - 2000) {
-		//Tools.svg.height.baseVal.value = Math.min(y + 2000, MAX_BOARD_SIZE);
+		// Tools.svg.height.baseVal.value = Math.min(y + 2000, MAX_BOARD_SIZE);
 	}
 }
 
@@ -951,6 +951,7 @@ Tools.generateUID = function (prefix, suffix) {
 	return uid;
 };
 
+// Добавление элемента в ...
 Tools.createSVGElement = function (name, attrs) {
 	var elem = document.createElementNS(Tools.svg.namespaceURI, name);
 	if (typeof (attrs) !== "object") return elem;
@@ -1164,8 +1165,10 @@ function resize_view(){
 	//Scale the canvas on load
 	var screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	var screenHeight =  Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-	svgWidth = Tools.svg.width.baseVal.value = Math.max(screenWidth + 2000, screenWidth * 2.5);
-	svgHeight = Tools.svg.height.baseVal.value =  Math.max(screenHeight + 2000, screenHeight * 2.5);
+	// svgWidth = Tools.svg.width.baseVal.value = Math.max(screenWidth + 2000, screenWidth * 2.5);
+	// svgHeight = Tools.svg.height.baseVal.value =  Math.max(screenHeight + 2000, screenHeight * 2.5);
+	svgWidth = Tools.svg.width.baseVal.value = Math.max(10000, screenWidth * 2.5);
+	svgHeight = Tools.svg.height.baseVal.value =  Math.max(10000, screenHeight * 2.5);
 	Tools.svg.setAttributeNS(null, "viewBox", "0 0 " + svgWidth + " " + svgHeight);
 }
 

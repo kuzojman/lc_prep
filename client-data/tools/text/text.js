@@ -79,7 +79,7 @@
 		var r = elem.getBoundingClientRect();
 		var x = (r.x+document.documentElement.scrollLeft)/Tools.scale;
 		var y = (r.y+r.height+document.documentElement.scrollTop)/Tools.scale;
-				
+
 		curText.x = x;
 		curText.y = y;
 		curText.size = parseInt(elem.getAttribute("font-size"));
@@ -88,8 +88,8 @@
 		startEdit();
 		input.value = elem.textContent;
 	}
-	
-	
+
+
 	function stopEdit() {
 		input.blur();
 		curText.id=0;
@@ -106,7 +106,7 @@
 		if(x+250>clientW){
 			x = Math.max(60,clientW-260)
 		}
-		
+
 		input.style.left=x +'px';
 		input.style.top=curText.y*Tools.scale-scrollY + 20 +'px';
 		input.focus();
@@ -192,7 +192,7 @@
 		elem.setAttribute("x", fieldData.x);
 		elem.setAttribute("y", fieldData.y);
 		if(Tools.useLayers)
-		elem.setAttribute("class","layer-"+Tools.layer);
+			elem.setAttribute("class","layer-"+Tools.layer);
 		elem.setAttribute("font-size", fieldData.size);
 		elem.setAttribute("fill", fieldData.color);
 		elem.setAttribute("opacity", Math.max(0.1, Math.min(1, fieldData.opacity)) || 1);
@@ -208,15 +208,15 @@
 
 	Tools.add({ //The new tool
 		// "name": "Text",
-		 "icon": "T",
-        "name": "Text",
-        //"icon": "",
+		"icon": "T",
+		"name": "Text",
+		//"icon": "",
 		"listeners": {
 			"press": clickHandler
 		},
 		"shortcuts": {
-            "changeTool":"4"
-        },
+			"changeTool":"4"
+		},
 		"onstart":onStart,
 		"onquit":onQuit,
 		"draw": draw,

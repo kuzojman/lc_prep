@@ -27,6 +27,17 @@
 }
 .canvascolor-container{background-color:black;border-radius:5px;overflow:hidden;width:179px;padding:2px;display:none;}.canvascolor-container canvas{cursor:crosshair;}.canvascolor-history{overflow:auto;}.canvascolor-history > div{margin:2px;display:inline-block;}</style>
 
+	<script>
+        // function getCookie(name) {
+        //     var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+        //     return matches ? decodeURIComponent(matches[1]) : undefined;
+        // }
+ 
+        // var is_auth = getCookie('is_auth');
+        // if (is_auth == 0) {
+        //     window.location.href = "https://kuzovkin.info/auth/";
+        // }
+    </script>
 </head>
 
 <body>
@@ -37,9 +48,9 @@
 		$(document).ready(function(){
   			$('[data-toggle="tooltip"]').tooltip();   
 		});
-		document.addEventListener('touchmove', function (event) {
-  			if (event.scale !== 1) { event.preventDefault(); }
-		}, {passive: false} );
+		// document.addEventListener('touchmove', function (event) {
+  // 			if (event.scale !== 1) { event.preventDefault(); }
+		// }, {passive: false} );
 	</script>
 	<div id="loadingMessage">Loading</div>
 	<div id="overlay"></div>
@@ -60,7 +71,7 @@
 	</div>
 <div id="board">
 		
-		<svg id="canvas"  width="500" height="500" viewBox= "0 0 500 500" + svgHeightversion="1.1" xmlns="http://www.w3.org/2000/svg" >
+		<svg id="canvas" width="500" height="500" viewBox= "0 0 500 500" + svgHeightversion="1.1" xmlns="http://www.w3.org/2000/svg" >
 			 <defs id="defs">
       				<pattern id="smallGrid" width="30" height="30" patternUnits="userSpaceOnUse">
         				<path d="M 30 0 L 0 0 0 30" fill="none" stroke="gray" stroke-width="0.5"/>
@@ -194,16 +205,18 @@
 	<script type="application/json" id="translations">{}</script>
 	<script src="js/path-data-polyfill.js"></script>
 	<script src="js/minitpl.js"></script>
-	<script src="js/board.js"></script>
+	<script src="js/interact.min.js"></script>
+	<script src="js/board.js?v=1.1.5"></script>
 	<script src="tools/pencil/pencil.js"></script>
 	<script src="tools/line/line.js"></script>
 	<script src="tools/rect/rect.js"></script>
 	<script src="tools/text/text.js"></script>
+	<!-- <script src="tools/formula/text.js"></script> -->
 	<script src="tools/eraser/eraser.js"></script>
 
 	<!-- BEGIN TRANSFORM TOOL -->
 	<!-- Transform dep: 2D -->
-	<script src="js/2D.js"></script>
+	<script src="js/2D.js?v=1.0.8"></script>
 	<script src="js/Init2D.js"></script>
 	<script src="tools/transform/transform.js"></script>
 	<!-- END TRANSFORM TOOL -->
@@ -260,7 +273,6 @@
 	<script src="tools/zoom-out/zoom-out.js"></script>
 	<script src="components/measurement/measurement.js"></script>
 	<script src="js/canvascolor/canvascolor.min.js"></script>
-
 </body>
 
 </html>

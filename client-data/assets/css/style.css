@@ -1,0 +1,618 @@
+/* .page-text-col h2::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  width: 771px;
+  height: 428px;
+  background-color: #484848;
+}
+
+.about-log-paragraph:first-child {
+  padding-top: 460px;
+} */
+
+/* Manual page */
+
+.manual {
+	background-image: url("../img/manual-back.png");
+	background-repeat: no-repeat;
+	background-position-y: 270px;
+	padding: 0 20px;
+	position: relative;
+	padding-top: 132px;
+}
+
+.gradient-text {
+	background-color: #6476f1;
+	background-image: linear-gradient(131deg, #6476f1, #3eacf8);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.manual-title {
+	font-family: gothamProBlack;
+	font-size: 60px;
+	line-height: normal;
+	margin-bottom: 157px;
+}
+
+.questions-container {
+	margin-bottom: 314px;
+	position: relative;
+	z-index: 2;
+}
+
+.question-number {
+	font-family: "GothamProBold";
+	font-size: 47px;
+	line-height: normal;
+	margin-right: 26px;
+}
+
+.question-title {
+	font-family: "GothamProBold";
+	line-height: normal;
+	font-size: 30px;
+	color: #484848;
+}
+
+.question-card {
+	box-shadow: 0px 0px 70px 0px #00000021;
+	background-color: #fff;
+	margin-bottom: 30px;
+	padding: 50px 40px;
+}
+
+.m-line {
+	height: 7px;
+	width: 305px;
+	background: #fceb8a;
+	position: absolute;
+	left: 0px;
+	top: 425px;
+	z-index: 1;
+}
+
+.question-answer {
+	font-size: 16px;
+	color: #5e3e3e;
+	line-height: 24px;
+	margin-top: 90px;
+
+	display: none;
+}
+.question-answer.active {
+	display: block;
+}
+
+/* auth board page */
+
+.auth-page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+.auth-desk_page {
+	padding: 230px 20px 254px;
+}
+
+.main-gradient {
+	background: linear-gradient(131deg, #6476f1, #3eacf8);
+}
+
+.auth-title,
+.auth-text {
+	color: #fff;
+	text-align: center;
+	line-height: normal;
+}
+
+.auth-title {
+	font-family: "GothamProBold";
+	font-size: 72px;
+	text-transform: uppercase;
+	margin-bottom: 34px;
+	margin-top: 0;
+}
+
+.auth-text {
+	font-family: "GothamProBold";
+	font-size: 24px;
+	margin-bottom: 73px;
+}
+
+.auth-form {
+	background-color: #fff;
+	padding: 100px 80px;
+	margin-bottom: 47px;
+	box-shadow: 0px 0px 73px 0px #6479f147;
+}
+
+.auth-form_container {
+	display: flex;
+	justify-content: center;
+	gap: 20%;
+	margin-bottom: 43px;
+}
+
+.auth-form_form p,
+.auth-form_reg p {
+	color: #022222;
+	text-align: center;
+	margin-bottom: 26px;
+}
+
+.auth-form_form .title {
+	font-family: "GothamProBold";
+	font-size: 18px;
+	color: #62bcf9;
+	margin-bottom: 40px;
+}
+
+.auth-form_form input,
+.reg-form_form input {
+	display: block;
+	max-width: 470px;
+	width: 100%;
+	font-size: 16px;
+	margin-bottom: 25px;
+	padding: 10px 0;
+	border: none;
+	border-bottom: 1px solid #000;
+}
+
+.reset-pass {
+	color: #639ff6;
+}
+
+.auth-form_reg .reg-btn {
+	width: 295px;
+	height: 65px;
+	background-color: #62bcf9;
+	font-family: "GothamProBold";
+	color: #fff;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: capitalize;
+}
+
+.auth-form_reg .reg-btn:hover {
+	background-color: #6476f1;
+	transition: background-color 0.3s ease;
+}
+
+.auth-form_socials {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 33px;
+}
+
+.auth-form_socials p {
+	margin: 0;
+}
+
+.auth-form_socials button {
+	border: none;
+	padding: 0;
+	background: transparent;
+	font-size: 18px;
+}
+
+.auth-board {
+	background-color: #fff;
+	height: 440px;
+	margin-bottom: 58px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: "GothamProBold";
+	font-size: 24px;
+	color: #9a9b9b;
+	text-align: center;
+	line-height: 38px;
+
+	box-shadow: 0px 0px 73px 0px #6479f147;
+}
+
+.board-info {
+	font-family: "GothamProBold";
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	line-height: normal;
+}
+
+.auth-form_mini,
+.reg-form_mini {
+	width: 746px;
+	margin: auto;
+	padding: 70px 83px 70px;
+}
+
+.auth-form_mini .title,
+.reg-form_mini .title {
+	font-family: "GothamProBold";
+	font-size: 30px;
+	color: #484848;
+	text-align: left;
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.auth-form_mini .title::before,
+.reg-form_mini .title::before {
+	display: block;
+	content: "";
+	width: 120px;
+	height: 2px;
+	background-color: #484848;
+}
+
+.auth-form_mini input,
+.auth-form_mini .auth-form_container-footer,
+.reg-form_mini input,
+.reg-form_mini .auth-form_container-footer {
+	margin-left: 76px;
+}
+
+.auth-form_mini input,
+.auth-form_mini .auth-form_container-footer {
+	max-width: 500px;
+}
+
+.auth-form_mini .auth-form_container-footer,
+.reg-form_mini .reg-form_container-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.auth-form_mini .main-btn {
+	margin-top: 10px;
+}
+
+.reg-form_mini {
+	max-width: 860px;
+	width: 100%;
+	margin: auto;
+	padding: 70px 83px 70px;
+}
+
+.reg-form_fields {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px 30px;
+	align-items: center;
+
+	margin-left: 76px;
+	margin-top: 46px;
+}
+
+.reg-form_form input {
+	margin-left: 0;
+	margin-bottom: 0;
+}
+
+.reg-form_form .reset-pass {
+	text-align: right;
+}
+
+.reg-form_form .auth-form_container-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.auth-text__yellow {
+	color: #fceb8a;
+}
+
+/* Filters */
+
+.filter-card {
+	margin-bottom: 41px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.left-card.filter-card.active {
+	background: #fff;
+}
+
+.filter-title {
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.filter-link {
+	font-family: "GothamProMedium";
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 10px;
+	border: 1px solid #c8cffa;
+	padding: 15px 16px;
+	background-color: #fff;
+	color: var(--gray);
+}
+
+.filter-link.active {
+	background-color: #6476f1;
+	color: #fff;
+}
+
+.subtheme {
+	padding: 0 25px 25px;
+}
+
+.left-card_themes {
+	display: block;
+}
+
+.left-card_themes-title {
+	font-family: "GothamProBold";
+	font-size: 15px;
+}
+
+.left-card_themes.active .left-card_themes-title {
+	background-color: #6375ee;
+	color: #fff;
+}
+
+.left-card_themes-title2,
+.left-card_themes-title3 {
+	font-family: "GothamProMedium";
+	font-size: 15px;
+}
+
+.left-card_themes_list {
+	padding: 0;
+	list-style-type: none;
+}
+
+.left-card_themes_list li {
+	position: relative;
+	font-size: 14px;
+	margin-bottom: 13px;
+	padding-left: 10px;
+}
+
+.left-card_themes-title2::before,
+.left-card_themes-title3::before {
+	content: "+";
+}
+
+.left-card_themes_list ul {
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.left-card_themes_list.active,
+.left-card_themes_list2.active {
+	display: block;
+}
+
+.left-card_themes-title2.active::before,
+.left-card_themes-title3.active::before {
+	content: "-";
+}
+
+.left-card_themes_list2,
+.left-card_themes_list {
+	display: none;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1785px) {
+	.auth-title {
+		font-size: 45px;
+	}
+
+	.auth-text {
+		font-size: 18px;
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.auth-desk_page {
+		padding-top: 160px;
+		padding-bottom: 160px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.auth-gradient {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+	.auth-title {
+		font-size: 65px;
+	}
+
+	.auth-text {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.auth-form {
+		padding: 80px 45px 20px;
+	}
+
+	.auth-form_container {
+		gap: 10%;
+	}
+
+	.auth-form_reg .reg-btn {
+		width: 230px;
+		height: 60px;
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.auth-form_mini {
+		width: 580px;
+	}
+	.auth-form_form input,
+	.auth-form_reg .reg-btn,
+	.auth-form_mini .auth-form_container-footer {
+		margin: 25px auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.manual {
+		padding-top: 0;
+	}
+	.manual-title {
+		margin-bottom: 70px;
+	}
+
+	.auth-form_container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.board-info {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	.reg-form_fields {
+		margin-left: 0;
+	}
+
+	.reg-form_form .auth-form_container-footer {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.manual-title {
+		font-size: 45px;
+	}
+
+	.auth-gradient {
+		padding-top: 100px;
+	}
+
+	.auth-title {
+		font-size: 50px;
+	}
+
+	.auth-text {
+		font-family: "GothamProRegular";
+	}
+
+	.board-info br {
+		display: none;
+	}
+
+	.reg-form_fields {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.reg-form_form .auth-form_container-footer {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.auth-desk_page {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	.auth-form_mini {
+		width: 100%;
+		padding: 60px 45px 40px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.manual-title {
+		font-size: 30px;
+	}
+
+	.questions-container {
+		margin-bottom: 100px;
+	}
+
+	.question-card {
+		padding: 40px 25px;
+	}
+
+	.question-title {
+		font-size: 20px;
+	}
+
+	.question-number {
+		font-size: 26px;
+		margin-right: 10px;
+	}
+
+	.auth-title {
+		font-size: 30px;
+	}
+
+	.auth-form_container-footer {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
+	.main-btn {
+		margin-bottom: 25px;
+	}
+
+	.auth-form_mini .title,
+	.reg-form_mini .title {
+		justify-content: center;
+	}
+
+	.auth-form_mini .title::before,
+	.reg-form_mini .title::before {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.auth-form_socials {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.auth-form {
+		padding: 30px 20px;
+	}
+
+	.auth-form_reg .reg-btn {
+		height: 50px;
+	}
+
+	.auth-form_container {
+		margin-bottom: 0;
+	}
+
+	.auth-gradient {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.auth-form_mini .title {
+		font-size: 28px;
+	}
+}
